@@ -165,4 +165,39 @@ footer {
   .service-card img { height: 200px; }
 }
 
+/* === Services page only === */
+.services-page {
+  background: #FFFDF8; 
+}
+
+
+.services-page .service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.services-page .service-card { width: 100%; }
+
+/* optional: consistent image height */
+.services-page .service-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .services-page .service-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .services-page .service-grid { grid-template-columns: 1fr; }
+}
+}
+
+
 
