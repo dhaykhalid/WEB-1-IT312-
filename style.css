@@ -282,43 +282,15 @@ footer {
   text-align: center;
   text-decoration: none;       
   cursor: pointer;
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition: /*background 0.2s ease,*/ transform 0.2s ease;
 }
 
 .button:hover {
   background: #FBE9E2;
-  transform: scale(1.05);
-}
-
-/*.profile-btn {
-    display: inline-block;
-      text-align: center;
-       color: #5C4033;
- background-color: #f0e2df;
-   border: 2px solid #B0857B;
-  border-radius: 10px;
-  padding: 12px;
-  font-size: 16px;
-  transition: 0.3s;
-
-  
-}
-
-.profile-btn:hover {
-  background-color: #efd9d5;
- 
+  /*transform: scale(1.05);*/
 }
 
 
-.profile-container-itmes a {
-  color: rgb(128, 118, 93);
-  text-decoration: none;
-}
-
-/* خلي الأزرار جنب بعض 
-.profile-container-itmes button + button {
-  margin-inline: 10px;
-}
 
 /*============= PREVIOUS SERVICE REQUESTS =============*/
 .Previous-container {
@@ -401,7 +373,6 @@ footer {
 }
 
 /*============= FAVORITE SERVICES =============*/
-/*============= FAVORITE SERVICES =============*/
 .favorite-container {
   background: #faece6;
   border: 2px solid #5C4033;
@@ -418,18 +389,17 @@ footer {
   margin-bottom: 25px;
 }
 
-/* ✅ هذا هو الجزء المهم */
+
 .favorite-grid {
-  display: flex;                 /* يخليهم صف أفقي */
+  display: flex;                
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
-  flex-wrap: nowrap;             /* يمنع النزول تحت */
+  flex-wrap: nowrap;            
 }
 
-/* كل كرت */
 .favorite-card {
-  flex: 1;                       /* يخلي كل كرت ياخذ مساحة متساوية */
+  flex: 1;                      
   background: #FFF8F5;
   border: 2px solid #5C4033;
   border-radius: 12px;
@@ -632,14 +602,14 @@ footer {
 input::placeholder,
 textarea::placeholder {
  font-family: Arial, sans-serif;
-  font-size: 15px;                        /* 🔸 حجم النص */
-  color: #786b4d;                         /* 🔸 لون ذهبي فاتح */
-                     /* 🔸 مائل وأنيق */
-  opacity: 1;                             /* 🔸 يخليه واضح، مو باهت */
+  font-size: 15px;                        
+  color: #786b4d;                         
+                    
+  opacity: 1;                             
 }
 
 
-/* استجابة للشاشات الصغيرة */
+
 @media (max-width: 900px) {
   .favorite-grid {
     flex-wrap: wrap;
