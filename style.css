@@ -199,14 +199,18 @@ footer {
   object-fit: cover;
   border-radius: 12px;
 }
+
+/* ====== coustmer Page Styles ====== */
+
+
 /*=============PROFILE==========*/
 .profile {
   display: flex;
   align-items: center;
-  justify-content: center;        /* يخلي البروفايل في النص بالصفحة */
+  justify-content: center;         
   gap: 50px;
-  background-color: #faf2ee;
-  border: 2px solid #B0857B;      /* يضيف حدود ذهبية حول البروفايل */
+  background-color: #FFF8F5;
+  border: 2px solid #B0857B;      
   border-radius: 15px;
   width:50%;
   margin: 60px auto;
@@ -219,13 +223,13 @@ footer {
   height: 130px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #B0857B;       /* حدود حول الصورة */
+  border: 2px solid #B0857B;     
 }
 
 .profile-container-itmes {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;          /* يخلي النصوص تبدأ من اليسار */
+  align-items: flex-start;          
   gap: 9px;
 }
 
@@ -250,25 +254,6 @@ footer {
   align-items: center;
 }
 
-.actions button {
-  width: 260px;
-  padding: 12px 16px;
-  font-size: 1rem;
-  border: 2px solid #B0857B;
-  border-radius: 6px;
-  background: #FFF8F5;
-  color: #5C4033;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s ease, transform 0.2s ease;
-}
-
-.actions button:hover {
-  background: #FBE9E2;
-  transform: scale(1.05);
-}
-
-/* ===== Generic Button ===== */
 .button {
   display: inline-block;      
   width: 260px;
@@ -282,19 +267,21 @@ footer {
   text-align: center;
   text-decoration: none;       
   cursor: pointer;
-  transition: /*background 0.2s ease,*/ transform 0.2s ease;
+  transition:  transform 0.2s ease;
 }
 
 .button:hover {
   background: #FBE9E2;
-  /*transform: scale(1.05);*/
+  
 }
 
 
 
-/*============= PREVIOUS SERVICE REQUESTS =============*/
-.Previous-container {
-  background: #faece6; 
+/*============= PREVIOUS AND FAV=============*/
+.Previous-container ,
+.favorite-container 
+{
+  background: #FFF8F5; 
   border: 2px solid #5C4033;       
   border-radius: 15px;
   width: 85%;
@@ -303,20 +290,24 @@ footer {
   box-shadow: 0 3px 10px rgba(0,0,0,0.05);
 }
 
-.Previous-container h2 {
+
+.Previous-container h2 ,
+.favorite-container h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: #5C4033;
 }
+
 
 /* Scroll style */
 .Previous-items {
   display: flex;
-  overflow-x: auto;
+  overflow: auto;
   gap: 20px;
   padding-bottom: 10px;
-  scroll-behavior: smooth;
+
 }
+
 
 .Previous-items::-webkit-scrollbar {
   height: 10px;
@@ -329,9 +320,10 @@ footer {
   background: #f7f0e5;
 }
 
-/* كروت الطلبات */
-.Previous-card {
-  flex: 0 0 250px;
+
+.Previous-card
+{
+   flex: 0 0 250px;
   background-color: #FFF8F5;
   border: 2px solid #5C4033;
   border-radius: 12px;
@@ -341,11 +333,20 @@ footer {
   transition: transform 0.2s ease;
 }
 
-.Previous-card:hover {
-  transform: translateY(-4px);
+.favorite-card {
+  flex: 1;
+  background-color: #FFF8F5;
+  border: 2px solid #5C4033;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  padding: 15px;
+  position: relative;
+  transition: transform 0.2s ease;
 }
 
-.Previous-card img {
+
+.Previous-card img,
+.favorite-card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
@@ -373,22 +374,6 @@ footer {
 }
 
 /*============= FAVORITE SERVICES =============*/
-.favorite-container {
-  background: #faece6;
-  border: 2px solid #5C4033;
-  border-radius: 15px;
-  width: 85%;
-  margin: 50px auto;
-  padding: 30px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-}
-
-.favorite-container h2 {
-  text-align: center;
-  color: #5C4033;
-  margin-bottom: 25px;
-}
-
 
 .favorite-grid {
   display: flex;                
@@ -398,28 +383,7 @@ footer {
   flex-wrap: nowrap;            
 }
 
-.favorite-card {
-  flex: 1;                      
-  background: #FFF8F5;
-  border: 2px solid #5C4033;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-  padding: 15px;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
 
-.favorite-card:hover {
-  transform: translateY(-4px);
-}
-
-.favorite-card img {
-  width: 100%;
-  height: 180px;
-  border-radius: 10px;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
 
 .favorite-card h3 {
   color: #4d4021;
@@ -431,8 +395,20 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ===== Request a Service Section ===== */
-.request-section {
+.fav-icon {
+   position: absolute;
+   background:transparent;
+   cursor:pointer;
+   border:0;
+  top: 3px;
+  right: 10px;
+  font-size: 30px;
+  color: red;
+}
+
+/* ===== forms Section ===== */
+.request-section ,
+.evaluate-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -459,20 +435,20 @@ footer {
   margin-bottom: 25px;
 }
 
-.request-form {
+form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.request-form label {
+label {
   font-weight: bold;
   color: #4b3a0f;
 }
 
-.request-form input,
-.request-form select,
-.request-form textarea {
+input,
+select,
+textarea {
   padding: 10px;
   border: 1px solid #5C4033;
   border-radius: 8px;
@@ -480,95 +456,27 @@ footer {
   background-color: #f0e2df;
 }
 
-.request-form textarea {
-  resize: vertical;
-  min-height: 80px;
-}
 
-.request-form button {
-  background-color: #f0e2df;
-  color: 5C4033;
-  border: none;
-  border-radius: 10px;
-  padding: 12px;
-  font-size: 16px;
-  transition: 0.3s;
-}
-
-.request-form button:hover {
-  background-color: #efd9d5;
-
-}
-
-
-/* ===== Service Evaluation Section ===== */
-.evaluate-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("images/hair.avif");
-  background-position: center; 
-  padding: 60px 0;
-  
-}
-
-.evaluate-section .form-box {
-  background-color: #fffdfb;
-  border: 2px solid #B0857B;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 40px;
-  width: 500px;
-  text-align: left;
-}
-
-.evaluate-section h2 {
-  text-align: center;
-  color: #4b3a0f;
-  font-size: 28px;
-  margin-bottom: 25px;
-}
-
-.evaluate-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.evaluate-form label {
-  font-weight: bold;
-  color: #4b3a0f;
-}
-
-.evaluate-form select,
-.evaluate-form textarea {
-  padding: 10px;
-  border: 1px solid #5C4033;
-  border-radius: 8px;
-  font-size: 15px;
-  background-color: #f0e2df;
-}
-
-.evaluate-form textarea {
-  resize: vertical;
-  min-height: 80px;
-}
-
-.evaluate-form button {
+ input[type="submit"] {
   background-color: #f0e2df;
   color: #5C4033;
   border: none;
   border-radius: 10px;
   padding: 12px;
   font-size: 16px;
-  cursor: pointer;
   transition: 0.3s;
 }
 
-.evaluate-form button:hover {
+ input[type="submit"]:hover {
   background-color: #efd9d5;
-  
+
 }
+
+ textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
 
 /* ===== Star Rating ===== */
 .star-rating {
@@ -578,23 +486,23 @@ footer {
   gap: 5px;
 }
 
-.star-rating input {
-  display: none;
-}
 
 .star-rating label {
   font-size: 32px;
   color: #ccc;
   cursor: pointer;
-  transition: color 0.2s;
+  /*transition: color 0.2s;*/
+}
+.star-rating input {
+  display: none;
 }
 
 .star-rating input:checked ~ label {
-  color: #d4a017;
+  color: #e0ad2a;
 }
 
 .star-rating label:hover,
-.star-rating label:hover ~ label {
+.star-rating label:hover ~ label{
   color: #e8b648;
 }
 
@@ -604,9 +512,9 @@ textarea::placeholder {
  font-family: Arial, sans-serif;
   font-size: 15px;                        
   color: #786b4d;                         
-                    
-  opacity: 1;                             
+                                               
 }
+
 
 
 
@@ -653,5 +561,6 @@ textarea::placeholder {
   .service-grid { grid-template-columns: 1fr; }
   .service-card img { height: 200px; }
 }
+
 
 
