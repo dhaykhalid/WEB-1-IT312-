@@ -30,24 +30,24 @@
   
    <!-- Breadcrumb -->
     <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-bottom:16px">
-      <ol style="list-style:none; display:flex; gap:8px;">
-        <li><a href="index1.html">Home</a></li>
+  <ol style="list-style:none; display:flex; gap:8px;">
+      <li><a href="index1.html">Home</a></li>
         <li aria-hidden="true">›</li>
          <li><a href="customer.html">Customer</a></li>
         <li aria-hidden="true">›</li>
-        <li aria-current="page">Evaluate Service</li>
-      </ol>
-    </nav>
+      <li aria-current="page">Evaluate Service</li>
+</ol>
+  </nav>
 
   <!-- Service Evaluation Form -->
   <section class="evaluate-section">
     <div class="form-box">
-      <h2>Service Evaluation</h2>
-      <form class="evaluate-form">
+    <h2>Service Evaluation</h2>
+      <form class="evaluate-form" action="Eservice.html">
         <label for="select-service">Select Service:</label>
-        <select id="select-service">
+      <select id="select-service">
           <option>Select Service:</option>
-           <option>Hair Treatment</option>
+        <option>Hair Treatment</option>
            <option>Hair Cut</option>
           <option>Wood Massage</option>
            <option>Swedish Massage</option>
@@ -57,7 +57,7 @@
 
         <label>Rate the Service:</label>
         <div class="star-rating">
-          <input type="radio" id="star5" name="rating" value="5" /><label for="star5">★</label>
+        <input type="radio" id="star5" name="rating" value="5" /><label for="star5">★</label>
           <input type="radio" id="star4" name="rating" value="4" /><label for="star4">★</label>
           <input type="radio" id="star3" name="rating" value="3" /><label for="star3">★</label>
           <input type="radio" id="star2" name="rating" value="2" /><label for="star2">★</label>
@@ -67,7 +67,7 @@
         <label for="feedback">Feedback:</label>
         <textarea id="feedback" rows="3" placeholder="Share your experience..."></textarea>
 
-        <button type="submit">Submit Evaluation</button>
+        <input type="submit" value="Submit Evaluation">
       </form>
     </div>
   </section>
