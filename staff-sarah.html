@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bright Spa — Staff Profile</title>
-  <link rel="stylesheet" href="style.css" />
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
   <!-- ===== Header ===== -->
   <header>
     <div class="brand">
-      <img src="logo1.png" alt="Bright Spa Logo" class="logo" />
+      <img src="logo1.png" alt="Bright Spa Logo" class="logo"/>
       <h1>Bright Spa</h1>
     </div>
     <nav>
@@ -23,22 +23,20 @@
       </ul>
     </nav>
   </header>
-
+<!-- ===== Breadcrumb ===== -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="index1.html">Home</a></li>
+    <li aria-hidden="true">›</li>
+    <li><a href="about.html">About</a></li>
+    <li aria-hidden="true">›</li>
+    <li aria-current="page">Staff Profile</li>
+  </ol>
+</nav>
   <main class="page-wrap">
-    <!-- ===== breadcrumb bar ===== -->
-    <section class="about-topbar">
-      <nav class="breadcrumb" aria-label="breadcrumb">
-        <ol style="list-style:none;display:flex;gap:8px;padding:0;margin:0;">
-          <li><a href="index1.html">Home</a></li>
-          <li aria-hidden="true">›</li>
-          <li><a href="about.html">About</a></li>
-          <li aria-hidden="true">›</li>
-          <li aria-current="page">Staff Profile</li>
-        </ol>
-      </nav>
-    </section>
+   
 
-    <!-- ===== table ===== -->
+    <!-- ===== hero ===== -->
     <section class="profile-hero">
       <div class="avatar">
         <img src="staff1.png" alt="Sarah Ahmed portrait">
@@ -46,83 +44,67 @@
       <div class="hero-text">
         <h2>Staff Profile</h2>
         <p><strong>Name:</strong> Sarah Ahmed</p>
-        <p><strong>Area of Expertise:</strong> Hair Care</p>
+        <p><strong>Area of Expertise:</strong> Hair Expert</p>
       </div>
     </section>
 
     <!-- ===== Profile Table ===== -->
     <section class="profile-section">
-      <table class="profile-table" aria-describedby="profile of Sarah Ahmed">
+      <table class="profile-table">
         <tbody>
           <tr>
-            <th scope="row">Staff’s Name</th>
+            <th>Staff’s Name</th>
             <td>Sarah Ahmed</td>
           </tr>
           <tr>
-            <th scope="row">Photo</th>
-            <td class="photo-cell">
-              <img src="staff1.png" alt="Sarah Ahmed headshot">
-            </td>
+            <th>Photo</th>
+            <td class="photo-cell"><img src="staff1.png" alt="Sarah Ahmed headshot"></td>
           </tr>
           <tr>
-            <th scope="row">Date of Birth</th>
-            <td>MM/DD/YYYY</td>
+            <th>Date of Birth</th>
+            <td>02/02/1999</td>
           </tr>
           <tr>
-            <th scope="row">Email</th>
+            <th>Email</th>
             <td><a href="mailto:sarah.ahmed@example.com">sarah.ahmed@example.com</a></td>
           </tr>
           <tr>
-            <th scope="row">Area of Expertise</th>
+            <th rowspan="3">Area of Expertise</th>
+            <td>Hair Care &amp; Styling</td>
+          </tr>
+          <tr><td>Coloring • Highlights</td></tr>
+          <tr><td>Keratin &amp; Protein Treatments</td></tr>
+          <tr>
+            <th>Skills</th>
             <td>
-              Hair Stylist<br>
-              Nail Care Specialist (assistant)
+              <ul>
+                <li>Hair Coloring
+                  <ul>
+                    <li>Ombre &amp; Balayage</li>
+                    <li>Color Correction</li>
+                  </ul>
+                </li>
+                <li>Styling &amp; Treatment</li>
+              </ul>
             </td>
           </tr>
-       <tr>
-  <th scope="row">Skills</th>
-  <td>
-    <ul class="wf-list">
-      <li>Massage Therapist
-        <ul>
-          <li>Swedish Massage</li>
-          <li>Relaxation Techniques</li>
-        </ul>
-      </li>
-      <li>Hair Care
-        <ul>
-          <li>Hair Styling</li>
-          <li>Blow-dry</li>
-        </ul>
-      </li>
-      <li>Customer Service</li>
-    </ul>
-  </td>
-</tr>
-<tr>
-  <th scope="row">Education</th>
-  <td>
-    <ul class="wf-list">
-      <li>2021 — Advanced Hair Styling
-        <ul>
-          <li>Color Techniques</li>
-          <li>Salon Hygiene</li>
-        </ul>
-      </li>
-      <li>2018 — Beauty &amp; Wellness Diploma
-        <ul>
-          <li>Cosmetology Basics</li>
-          <li>Massage &amp; Body Wellness</li>
-        </ul>
-      </li>
-      <li>GPA: 4.2</li>
-    </ul>
-  </td>
-</tr>
+          <tr>
+            <th>Education</th>
+            <td>
+              <ul>
+                <li>2020 — Diploma in Hair Design
+                  <ul>
+                    <li>Advanced Cutting</li>
+                    <li>Color Techniques</li>
+                  </ul>
+                </li>
+                <li>2018 — Beauty &amp; Salon Management</li>
+              </ul>
+            </td>
+          </tr>
         </tbody>
       </table>
-    </section>
-  </main>
+    </section>  </main>
 
   <!-- ===== Footer ===== -->
   <footer>
