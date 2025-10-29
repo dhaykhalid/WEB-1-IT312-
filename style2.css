@@ -721,7 +721,7 @@ textarea::placeholder {
   
 }
 
- .AddMember-form,.AddService-container input[type="submit"] {
+ .ManageStaff-container,.AddService-container input[type="submit"] {
   background-color: #f0e2df;
   color: #5C4033;
   border: none;
@@ -731,7 +731,7 @@ textarea::placeholder {
   transition: 0.3s;
 }
 
- .AddMember-form,.AddService-container input[type="button"] {
+ .ManageStaff-container,.AddService-container input[type="button"] {
   background-color: #f0e2df;
   color: #5C4033;
   border: none;
@@ -741,11 +741,11 @@ textarea::placeholder {
   transition: 0.3s;
 }
 
- .AddMember-form,.AddService-container input[type="submit"]:hover {
+ .ManageStaff-container,.AddService-container input[type="submit"]:hover {
   background-color: #efd9d5;
 
 }
-.AddMember-form,.AddService-container input[type="button"]:hover {
+.ManageStaff-container,.AddService-container input[type="button"]:hover {
   background-color: #efd9d5;
 
 }
@@ -834,4 +834,3 @@ textarea::placeholder {
   object-position:center;  
   display:block;
 }
-
