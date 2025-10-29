@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bright Spa — Staff Profile</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="brand">
+      <img src="logo1.png" alt="Bright Spa Logo" class="logo"/>
+      <h1>Bright Spa</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index1.html">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="customer.html">Customer</a></li>
+        <li><a href="provider.html">Provider</a></li>
+      </ul>
+    </nav>
+  </header>
+<!-- ===== Breadcrumb ===== -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="index1.html">Home</a></li>
+    <li aria-hidden="true">›</li>
+    <li><a href="about.html">About</a></li>
+    <li aria-hidden="true">›</li>
+    <li aria-current="page">Staff Profile</li>
+  </ol>
+</nav>
+  <main class="page-wrap">
+
+
+    <!-- ===== hero ===== -->
+    <section class="profile-hero">
+      <div class="avatar">
+        <img src="staff3.png" alt="Maya Hassan portrait">
+      </div>
+      <div class="hero-text">
+        <h2>Staff Profile</h2>
+        <p><strong>Name:</strong> Maya Hassan</p>
+        <p><strong>Area of Expertise:</strong> Facial Specialist</p>
+      </div>
+    </section>
+
+    <!-- ===== Profile Table ===== -->
+    <section class="profile-section">
+      <table class="profile-table" aria-describedby="profile of Maya Hassan">
+     <tbody>
+  <!-- عنوان شامل يمتد على عمودين -->
+  <tr>
+    <th scope="row">Staff’s Name</th>
+    <td>Maya Hassan</td>
+  </tr>
+
+  <tr>
+    <th scope="row">Photo</th>
+    <td class="photo-cell">
+      <img src="staff3.png" alt="Maya Hassan headshot">
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row">Date of Birth</th>
+    <td>01/01/2000</td>
+  </tr>
+
+  <tr>
+    <th scope="row">Email</th>
+    <td><a href="mailto:maya.hassan@example.com">maya.hassan@example.com</a></td>
+  </tr>
+
+  <!-- هنا الـ spanning الحقيقي -->
+  <!-- ===== Area of Expertise Section (مثل الصورة) ===== -->
+<tr>
+  <th rowspan="3">Area of Expertise</th>
+  <td>Facial Specialist</td>
+</tr>
+<tr>
+  <td>Skin Care &amp; Beauty Treatments</td>
+</tr>
+<tr>
+  <td>Hydrating • Deep Cleansing • Anti-Aging</td>
+</tr>
+
+  <tr>
+    <th scope="row">Skills</th>
+    <td>
+      <ul class="wf-list">
+        <li>Facial Treatments
+          <ul>
+            <li>Hydrating Facial</li>
+            <li>Deep Cleansing</li>
+            <li>Anti-Aging Therapy</li>
+          </ul>
+        </li>
+        <li>Skin Analysis
+          <ul>
+            <li>Customized Treatment Plans</li>
+            <li>Product Recommendations</li>
+          </ul>
+        </li>
+        <li>Customer Consultation</li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row">Education</th>
+    <td>
+      <ul class="wf-list">
+        <li>2021 — Diploma in Skin Care &amp; Aesthetics
+          <ul>
+            <li>Professional Facial Techniques</li>
+            <li>Dermatology Basics</li>
+          </ul>
+        </li>
+        <li>2019 — Beauty &amp; Wellness Certification</li>
+        <li>GPA: 4.4</li>
+      </ul>
+    </td>
+  </tr>
+</tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="footer-contact">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you. Reach out for bookings or any questions.</p>
+      <p>✆ +96650886681</p>
+      <p>✉ BrightSpa@gmail.com</p>
+      <br>
+    </div>
+    <div class="footer-bottom">
+      <hr>
+      <p>© Bright Spa All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
