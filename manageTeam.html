@@ -1,0 +1,168 @@
+!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Manage Team Members</title>
+<link rel="stylesheet" href="style.css" />
+<body>
+<!-- ========== Header ========== -->
+  <header>
+    <div class="brand">
+      <img src="images/logo1.png" alt="Bright Spa Logo" class="logo"/>
+      <h1>Bright Spa</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index1.html" >Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="customer.html">Customer</a></li>
+        <li><a href="Provider.html"class="active" >Provider</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+<main>
+<!-- ===== Breadcrumb ===== -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="index1.html">Home</a></li>
+    <li aria-hidden="true">›</li>
+    <li><a href="about.html">Provider</a></li>
+    <li aria-hidden="true">›</li>
+    <li aria-current="page">Manage Team</li>
+  </ol>
+</nav>
+  <main class="page-wrap">
+  <!-- Section 1: Manage existing staff-->
+<section class="ManageStaff-container staff-list-section">
+ <div class="section-head">
+  <h2>Manage Staff Members</h2>
+  <div class="list-actions">
+  <input type="submit" class="button danger-btn" value="Delete">
+  </div>
+ </div>
+
+ <form method="post" class="staff-form">
+  <div class="staff-box">
+   <div class="staff-list" aria-label="Staff members">
+
+    <label class="staff-card">
+    <div class="staff-left">
+    <div class="photo-thumb">
+      <img src="images/staff1.PNG" class="photo-img" alt="">
+     </div>
+     <div class="staff-name">Sarah Ahmed</div>
+    </div>
+     <input type="checkbox" name="staff[]" value="1" class="staff-check">
+    </label>
+
+    <label class="staff-card">
+     <div class="staff-left">
+    <div class="photo-thumb">
+     <img src="images/staff2.PNG" class="photo-img" alt="">
+      </div>
+    <div class="staff-name">Lina Al-Harbi</div>
+     </div>
+     <input type="checkbox" name="staff[]" value="2" class="staff-check">
+   </label>
+
+    <label class="staff-card">
+    <div class="staff-left">
+      <div class="photo-thumb">
+      <img src="images/staff3.PNG" class="photo-img" alt="">
+      </div>
+     <div class="staff-name">Maya Hassan</div>
+     </div>
+    <input type="checkbox"  name="staff[]" value="3" class="staff-check">
+    </label>
+
+    <label class="staff-card">
+     <div class="staff-left">
+     <div class="photo-thumb">
+      <img src="images/staff4.PNG" class="photo-img" alt="">
+     </div>
+     <div class="staff-name">Reem AL-Anazi</div>
+   </div>
+     <input type="checkbox" name="staff[]" value="4" class="staff-check">
+    </label>
+
+  </div>
+ </div>
+ </form>
+</section>
+
+
+
+
+  <!-- Section 2: Add a new member -->
+  <section class="ManageStaff-container">
+ <h2>Add Staff Member</h2>
+
+ <form class="AddMember-form" method="post" enctype="multipart/form-data">
+  <div class="form-grid">
+   <div class="photo-uploader">
+    <div class="photo-box" aria-label="Member photo placeholder">📷</div>
+    <input type="file" name="photo" accept="image/*" style="display:none" id="upload-photo">
+   
+   </div>
+   <div class="form-fields">
+
+    <label for="full-name">Full Name</label>
+    <input id="full-name" type="text" name="name">
+
+    <label for="dob">Date of Birth</label>
+    <input id="dob" type="date" name="dob">
+
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email">
+
+    <label for="education">Education</label>
+    <input id="education" type="text" name="education">
+
+   <label for="expertise">Area of expertise</label>
+   <textarea id="expertise" name="expertise" rows="4" cols="64">Write here...</textarea>
+
+    <label for="skills">Skills</label>
+    <textarea id="skills" name="skills" rows="4" cols="64">Write here...</textarea>
+
+   </div>
+
+
+
+  </div>
+
+  <div class="form-buttons">
+   <input type="button" value="cancel">
+   <input  type="submit"  value=Add>
+  </div>
+ </form>
+</section>
+
+
+</main>
+
+  
+  
+   
+    <!-- ========== Footer ========== -->
+  <footer>
+  <div class="footer-contact">
+    <h2>Contact Us</h2>
+    <p>
+      We’d love to hear from you! Whether you have a question about our services, want to book an appointment, or simply need more information, our team is here to help. Reach out to us anytime.
+    </p>
+    <p>✆ +96650886681</p>
+    <p>✉ BrightSpa@gmail.com</p>
+    <br>
+  </div>
+
+  <div class="footer-bottom">
+    <hr>
+    <p>© Bright Spa All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
