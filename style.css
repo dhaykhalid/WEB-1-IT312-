@@ -524,37 +524,19 @@ textarea  {
 
 /* ===== upload ===== */
 
-.photo-uploader{
-  text-align:center;
- }
-.photo-upload{ 
-text-align:center;
-margin-bottom:22px; }
-
-.upload-btn:hover {background:#efd9d5;}
-
- 
-.photo-box{
-position: relative;
- width:100%;
- height:160px; 
- border:2px solid #B0857B; 
- border-radius:10px;
- background:#fdf8f4;
-  display:flex;
-align-items:center;
- justify-content:center;
-   margin-bottom:10px;
-  cursor:pointer; 
-  transition:.2s;
+.photo-box {
+  position: relative;
+  cursor: pointer; /* يجعل الماوس يشير أنه قابل للنقر */
+  transition: all 0.3s ease;
 }
-.photo-box:hover{ 
-  background:#f5e6df;
-   box-shadow:0 0 10px rgba(92,64,51,.25);
-    transform:scale(1.02);
-   }
 
-   .photo-box::after {
+.photo-box:hover {
+  background-color: #f5e6df; /* لون أفتح يعطي إحساس بالتحرك */
+  box-shadow: 0 0 10px rgba(92, 64, 51, 0.3);
+  transform: scale(1.02); /* تكبير خفيف */
+}
+
+.photo-box::after {
   content: "＋";
   position: absolute;
   top: 50%;
@@ -567,6 +549,11 @@ align-items:center;
   pointer-events: none;
 }
 
+.photo-box{
+  width:100%; height:160px; border:2px solid #5C4033; border-radius:10px;
+  background:#fdf8f4; display:flex; align-items:center; justify-content:center; margin-bottom:10px;
+  cursor:pointer; transition:.2s;
+}
 .photo-box:hover::after {
   opacity: 1;
 }
@@ -582,56 +569,39 @@ align-items:center;
 
 
 
+
 .staff-list{
   display:flex;
   flex-direction:column;
   gap:12px;
-
-  max-height:240px;          /* حرّفها إذا بغيت */
-  overflow-y:auto;           /* يظهر السكرول عند الحاجة */
+  max-height:240px;          
+  overflow-y:auto;           
   overflow-x:hidden;
 
   padding-right:10px;
   box-sizing:border-box;
 
-  scrollbar-gutter:stable both-edges;     /* يثبّت مكان السكرول */
-
-  /* Firefox */
-  scrollbar-width:thin;                   /* auto | thin | none */
-  scrollbar-color:#5C4033 #f3e8e1;        /* thumb | track */
+  scrollbar-gutter:stable both-edges;     
+  scrollbar-width:thin;                   
+  scrollbar-color:#5C4033 #f3e8e1;        
 }
 
 .staff-card{
   display:flex; justify-content:space-between; align-items:center; gap:14px;
-  border:2px solid #B0857B; border-radius:10px; padding:12px 14px; background:#FFF8F5;
+  border:2px solid #5C4033; border-radius:10px; padding:12px 14px; background:#FFF0E8;
 }
 .staff-left{ display:flex; align-items:center; gap:12px; }
-.photo-thumb{ width:56px; height:56px; border:2px solid #B0857B; border-radius:8px; background:#f8efea; }
+.photo-thumb{ width:56px; height:56px; border:2px solid #5C4033; border-radius:8px; background:#FFF0E8; }
 .staff-name{ font-weight:700; color:#5C4033; }
 .staff-check{ width:18px; height:18px; }
 
-/* Chrome / Edge / Safari */
-.staff-list::-webkit-scrollbar{ width:16px; }
-.staff-list::-webkit-scrollbar-track{
+
   background:#f3e8e1;
   border-left:2px solid #b0857b;
   border-radius:10px;
 }
-.staff-list::-webkit-scrollbar-thumb{
-  background:#5C4033;
-  border-radius:10px;
-  border:3px solid #f3e8e1;             
-}
-.staff-list::-webkit-scrollbar-thumb:hover{ background:#7a5c4c; }
 
-.photo-thumb{
-  width:56px;
-  height:56px;
-  border:2px solid #B0857B;
-  border-radius:8px;
-  overflow:hidden;          
-  background:#FFF0E8;       
-}
+.staff-list::-webkit-scrollbar-thumb:hover{ background:#7a5c4c; }
 
 .photo-thumb img{
   width:100%;
@@ -640,6 +610,7 @@ align-items:center;
   object-position:center;  
   display:block;
 }
+
 
 
 
