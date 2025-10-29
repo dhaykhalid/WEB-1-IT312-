@@ -283,7 +283,7 @@ button{
 /*============= PREVIOUS SERVICE REQUESTS =============*/
 .Previous-container,
 .AllServices-container,
-.favorite-container, .staff-section{
+.favorite-container{
   background: #FFF8F5;
   border: 2px solid #5C4033;
   border-radius: 15px;
@@ -296,7 +296,7 @@ button{
 /* العنوان داخل البوكس */
 .Previous-container h2,
 .AllServices-container h2,
-.favorite-container h2, .staff-section h2  { 
+.favorite-container h2{ 
   text-align: center;
   margin-bottom: 25px;
   color: #5C4033;
@@ -306,24 +306,12 @@ button{
 
 /* Scroll style */
 .Previous-items,
-.service-list, .staff-scroller {
+.service-list{
    display: flex;
   overflow: auto;
   gap: 20px;
   padding-bottom: 10px;
 
-}
-
-
-.staff-scroller::-webkit-scrollbar{
-  height: 10px;
-}
-.staff-scroller::-webkit-scrollbar-thumb{
-  background: #5C4033;
-  border-radius: 10px;
-}
-.staff-scroller::-webkit-scrollbar-track {
-  background: #f7f0e5;
 }
 .service-list::-webkit-scrollbar{
   height: 10px;
@@ -348,7 +336,7 @@ button{
 }
 
 .Previous-card,
-.service-card-Provider, .member {
+.service-card-Provider {
   flex: 0 0 250px;
   background: #FFF8F5;
   border: 2px solid #5C4033;
@@ -371,7 +359,7 @@ button{
 /* الصورة داخل البطاقة — تدعم <img> وأيضًا placeholder */
 .Previous-card img,
 .service-card-Provider img,
-.favorite-card img, .member img {
+.favorite-card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
@@ -379,13 +367,13 @@ button{
   margin-bottom: 10px;
 }
 
-.Previous-card p ,.service-card-Provider p, .member p{
+.Previous-card p ,.service-card-Provider p{
   color: #5C4033; 
   font-size: 0.9rem;
   text-align: left;
   margin: 3px 0;
 }
-.Previous-card .Status .service-card-Provider , .member{
+.Previous-card .Status .service-card-Provider{
   position: absolute;
   top: 12px;
   right: 12px;
