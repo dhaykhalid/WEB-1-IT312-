@@ -1,193 +1,179 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bright Spa — About Us</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bright Spa</title>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <!-- ===== Header ===== -->
-  <header>
-    <div class="brand">
-      <img src="logo1.png" alt="Bright Spa Logo" class="logo" />
-      <h1>Bright Spa</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index1.html">Home</a></li>
-        <li><a href="about.html" class="active">About Us</a></li>
-        <li><a href="Services.html">Services</a></li>
-        <li><a href="customer.html">Customer</a></li>
-        <li><a href="provider.html">Provider</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="page-wrap">
-    <!-- Top bar: breadcrumb -->
-    <section class="about-topbar">
-      <!-- Breadcrumb -->
-      <nav class="breadcrumb" aria-label="breadcrumb" style="margin-bottom:16px">
-        <ol style="list-style:none; display:flex; gap:8px; padding:0; margin:0;">
-          <li><a href="index1.html">Home</a></li>
-          <li aria-hidden="true">›</li>
-          <li aria-current="page">About</li>
-        </ol>
-      </nav>
-    </section>
-
-    <!-- ===== About Section ===== -->
-    <section class="about-section">
-      <h2>About Us</h2>
-      <p>
+<!-- ===== Header ===== -->
+<header>
+<div class="brand">
+<img src="logo1.png" alt="Bright Spa Logo" class="logo"/>
+<h1>Bright Spa</h1>
+</div>
+<nav>
+<ul>
+<li><a href="index1.html">Home</a></li>
+<li><a class="active" href="about.html">About Us</a></li>
+<li><a href="Services.html">Services</a></li>
+<li><a href="customer.html">Customer</a></li>
+<li><a href="provider.html">Provider</a></li>
+</ul>
+</nav>
+</header>
+<main class="page-wrap">
+<!-- ===== Breadcrumb ===== -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="index1.html">Home</a></li>
+    <li aria-hidden="true">›</li>
+    <li aria-current="page">About</li>
+  </ol>
+</nav>
+<!-- ===== About Section ===== -->
+<section class="about-section">
+<h2>About Us</h2>
+<p>
         At <strong>Bright Spa</strong>, we believe self-care is more than luxury — it’s a way to reset.
         Our mission is to blend relaxation and professional care in every visit.
       </p>
-    </section>
+</section>
+<!-- ===== Meet Our Staff (Horizontal Scroll Only) ===== -->
+<section class="staff-section">
+<h2>Meet Our Staff</h2>
+<p>Our expert team makes every visit relaxing and unforgettable.</p>
+<div class="staff-scroller">
+  <!-- Sarah -->
+  <div class="member">
+    
+      <img src="staff1.png" alt="Sarah Ahmed" />
+   
+    <div class="name"><a href="staff-sarah.html">Sarah Ahmed</a></div>
+    <div class="role">Hair Expert</div>
+  </div>
 
-    <!-- ===== Meet Our Staff (Horizontal Scroll Only) ===== -->
-    <section class="staff-section">
-      <h2>Meet Our Staff</h2>
-      <p>Our expert team makes every visit relaxing and unforgettable.</p>
+  <!-- Lina -->
+  <div class="member">
+    
+      <img src="staff2.png" alt="Lina Al-Harbi" />
+  
+    <div class="name"><a href="staff-lina.html">Lina Al-Harbi</a></div>
+    <div class="role">Massage Therapist</div>
+  </div>
 
-      <div class="staff-scroller" id="staffTrack">
-        <article class="staff-card">
-  <a href="staff-sarah.html">
-    <img src="staff1.png" alt="Senior Stylist" />
-  </a>
-  <h3>Sarah Ahmed</h3>
-  <p>Hair Expert</p>
-</article>
+  <!-- Maya -->
+  <div class="member">
+    
+      <img src="staff3.png" alt="Maya Hassan" />
+    
+    <div class="name"><a href="staff-maya.html">Maya Hassan</a></div>
+    <div class="role">Facial Specialist</div>
+  </div>
 
-        <article class="staff-card">
-          <img src="1.png" alt="Massage Therapist" />
-          <h3>Lina Al-Harbi</h3><p>Massage Therapist</p>
-        </article>
+  <!-- Reem -->
+  <div class="member">
+   
+      <img src="staff4.png" alt="Reem Al-Anazi" />
+ 
+    <div class="name"><a href="staff-reem.html">Reem Al-Anazi</a></div>
+    <div class="role">Nail Artist</div>
+  </div>
 
-        <article class="staff-card">
-          <img src="2.png" alt="Facial Specialist" />
-          <h3>Maya Hassan</h3><p>Facial Specialist</p>
-        </article>
+  <!-- Aisha -->
+  <div class="member">
+    
+      <img src="staff5.png" alt="Aisha Saleh" />
+    
+    <div class="name"><a href="staff-aisha.html">Aisha Saleh</a></div>
+    <div class="role">Reception</div>
+  </div>
 
-        <article class="staff-card">
-          <img src="3.png" alt="Nail Artist" />
-          <h3>Reem Al-Anazi</h3><p>Nail Artist</p>
-        </article>
-
-        <article class="staff-card">
-          <img src="4.png" alt="Brow Technician" />
-          <h3>Hana Al-Qahtani</h3><p>Brow Technician</p>
-        </article>
-
-        <article class="staff-card">
-          <img src="5.png" alt="Front Desk" />
-          <h3>Noor Al-Mutairi</h3><p>Front Desk</p>
-        </article>
-
-        <article class="staff-card">
-          <img src="6.png" alt="Skin Care" />
-          <h3>Dalal Al-Shammari</h3><p>Skincare</p>
-        </article>
-
-        <article class="staff-card">
-          <img src="7.png" alt="Body Care" />
-          <h3>Rania Al-Dosari</h3><p>Body Care</p>
-        </article>
-
-        <article class="staff-card">
-          <img src="8.png" alt="Makeup Artist" />
-          <h3>Aya Al-Salem</h3><p>Makeup Artist</p>
-        </article>
-
-        <article class="staff-card">
-          <img src="9.png" alt="Spa Manager" />
-          <h3>Layla Al-Rashid</h3><p>Spa Manager</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- ===== Join Our Team (Form) ===== -->
-    <section class="join-section">
-      <h2>Join Our Team</h2>
-
-      <form class="join-form" action="#" method="post" enctype="multipart/form-data">
-        <!-- Row 1 -->
-        <div class="form-row">
-          <div class="form-field">
-            <label>First Name *</label>
-            <input type="text" required />
-          </div>
-          <div class="form-field">
-            <label>Last Name *</label>
-            <input type="text" required />
-          </div>
-          <div class="form-field">
-            <label>Date of Birth *</label>
-            <input type="date" required />
-          </div>
-        </div>
-
-        <!-- Row 2 (Skills قبل Area of Expertise) -->
-        <div class="form-row">
-          <div class="form-field">
-            <label>Email *</label>
-            <input type="email" placeholder="example@mail.com" required />
-          </div>
-          <div class="form-field">
-            <label>Education *</label>
-            <input type="text" placeholder="e.g. Diploma, Bachelor" required />
-          </div>
-          <div class="form-field">
-            <label>Skills *</label>
-            <input type="text" placeholder="e.g. Hair Styling, Customer Service" required />
-          </div>
-        </div>
-
-        <!-- Row 3 (Photo قبل Message) + Area of Expertise بعد Skills) -->
-        <div class="form-row">
-          <div class="form-field">
-            <label>Area of Expertise *</label>
-            <select required>
-              <option value="">Select…</option>
-              <option>Hair Care</option>
-              <option>Nail Care</option>
-              <option>Massage & Body Care</option>
-              <option>Facial Treatment</option>
-            </select>
-          </div>
-
-          <div class="form-field">
-            <label>Photo *</label>
-            <input type="file" accept="image/*" required />
-          </div>
-
-          <div class="form-field">
-            <label>Message</label>
-            <textarea rows="4" placeholder="Write a short message..."></textarea>
-          </div>
-        </div>
-
-        <button type="submit" class="btn-primary">Submit</button>
-      </form>
-    </section>
-  </main>
-
-  <!-- ========== Footer ========== -->
-  <footer>
-    <div class="footer-contact">
-      <h2>Contact Us</h2>
-      <p>We’d love to hear from you! Whether you have a question about our services, want to book an appointment, or simply need more information, our team is here to help. Reach out to us anytime.</p>
-      <p>✆ +96650886681</p>
-      <p>✉ BrightSpa@gmail.com</p>
-      <br>
-    </div>
-
-    <div class="footer-bottom">
-      <hr>
-      <p>© Bright Spa All rights reserved.</p>
-    </div>
-  </footer>
+  <!-- Noor -->
+  <div class="member">
+    
+      <img src="staff6.png" alt="Noor Khalid" />
+  
+    <div class="name"><a href="staff-noor.html">Noor Khalid</a></div>
+    <div class="role">Makeup Artist</div>
+  </div>
+</div>
+</section>
+<!-- ===== Join Our Team (Form) ===== -->
+<section class="join-section">
+<h2>Join Our Team</h2>
+<form action="#" class="join-form" enctype="multipart/form-data" method="post">
+<!-- Row 1 -->
+<div class="form-row">
+<div class="form-field">
+<label>First Name *</label>
+<input required="" type="text"/>
+</div>
+<div class="form-field">
+<label>Last Name *</label>
+<input required="" type="text"/>
+</div>
+<div class="form-field">
+<label>Date of Birth *</label>
+<input required="" type="date"/>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="form-row">
+<div class="form-field">
+<label>Email *</label>
+<input placeholder="example@mail.com" required="" type="email"/>
+</div>
+<div class="form-field">
+<label>Education *</label>
+<input placeholder="e.g. Diploma, Bachelor" required="" type="text"/>
+</div>
+<div class="form-field">
+<label>Skills *</label>
+<input placeholder="e.g. Hair Styling, Customer Service" required="" type="text"/>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="form-row">
+<div class="form-field">
+<label>Area of Expertise *</label>
+<select required="">
+<option value="">Select…</option>
+<option>Hair Care</option>
+<option>Nail Care</option>
+<option>Massage &amp; Body Care</option>
+<option>Facial Treatment</option>
+</select>
+</div>
+<div class="form-field">
+<label>Photo *</label>
+<input accept="image/*" required="" type="file"/>
+</div>
+<div class="form-field">
+<label>Message</label>
+<textarea placeholder="Write a short message..." rows="4"></textarea>
+</div>
+</div>
+<button class="button" type="submit">Submit</button>
+</form>
+</section>
+</main>
+<!-- ========== Footer ========== -->
+<footer>
+<div class="footer-contact">
+<h2>Contact Us</h2>
+<p>We’d love to hear from you! Whether you have a question about our services, want to book an appointment, or simply need more information, our team is here to help. Reach out to us anytime.</p>
+<p>✆ +96650886681</p>
+<p>✉ BrightSpa@gmail.com</p>
+<br/>
+</div>
+<div class="footer-bottom">
+<hr/>
+<p>© Bright Spa All rights reserved.</p>
+</div>
+</footer>
 </body>
 </html>
