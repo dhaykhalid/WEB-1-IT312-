@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
 <meta charset="UTF-8" />
@@ -9,7 +9,7 @@
 <!-- ========== Header ========== -->
   <header>
     <div class="brand">
-      <img src="images/images/logo1.png" alt="Bright Spa Logo" class="logo"/>
+      <img src="images/logo1.png" alt="Bright Spa Logo" class="logo"/>
       <h1>Bright Spa</h1>
     </div>
 
@@ -23,18 +23,20 @@
       </ul>
     </nav>
   </header>
+   <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-bottom:16px">
+  <ol style="list-style:none; display:flex; gap:8px;">
+      <li><a href="index1.html">Home</a></li>
+        <li aria-hidden="true">›</li>
+         <li><a href="Provider.html">Provider</a></li>
+        <li aria-hidden="true">›</li>
+      <li aria-current="page">Manage Team</li>
+</ol>
+  </nav>
+
   
 <main>
-<!-- ===== Breadcrumb ===== -->
-<nav class="breadcrumb" aria-label="Breadcrumb">
-  <ol>
-    <li><a href="index1.html">Home</a></li>
-    <li aria-hidden="true">›</li>
-    <li><a href="about.html">Provider</a></li>
-    <li aria-hidden="true">›</li>
-    <li aria-current="page">Manage Team</li>
-  </ol>
-</nav>
+
   <main class="page-wrap">
   <!-- Section 1: Manage existing staff-->
 <section class="ManageStaff-container staff-list-section">
@@ -52,7 +54,7 @@
     <label class="staff-card">
     <div class="staff-left">
     <div class="photo-thumb">
-      <img src="images/images/staff1.PNG" class="photo-img" alt="">
+      <img src="images/staff1.PNG" class="photo-img" alt="">
      </div>
      <div class="staff-name">Sarah Ahmed</div>
     </div>
@@ -62,35 +64,17 @@
     <label class="staff-card">
      <div class="staff-left">
     <div class="photo-thumb">
-     <img src="images/images/staff2.PNG" class="photo-img" alt="">
+     <img src="images/staff2.PNG" class="photo-img" alt="">
       </div>
     <div class="staff-name">Lina Al-Harbi</div>
      </div>
      <input type="checkbox" name="staff[]" value="2" class="staff-check">
    </label>
-   
-   <label class="staff-card">
-    <div class="staff-left">
-      <div class="photo-thumb">
-      <img src="images/images/staff5.PNG" class="photo-img" alt="">
-      </div>
-     <div class="staff-name">Aisha saleh</div>
-     </div>
-    <input type="checkbox"  name="staff[]" value="3" class="staff-check">
-    </label>
-<label class="staff-card">
-    <div class="staff-left">
-      <div class="photo-thumb">
-      <img src="images/staff6.PNG" class="photo-img" alt="">
-      </div>
-     <div class="staff-name">noor Khalid</div>
-     </div>
-    <input type="checkbox"  name="staff[]" value="3" class="staff-check">
-    </label>
+
     <label class="staff-card">
     <div class="staff-left">
       <div class="photo-thumb">
-      <img src="images/images/staff3.PNG" class="photo-img" alt="">
+      <img src="images/staff3.PNG" class="photo-img" alt="">
       </div>
      <div class="staff-name">Maya Hassan</div>
      </div>
@@ -100,13 +84,12 @@
     <label class="staff-card">
      <div class="staff-left">
      <div class="photo-thumb">
-      <img src="images/images/staff4.PNG" class="photo-img" alt="">
+      <img src="images/staff4.PNG" class="photo-img" alt="">
      </div>
      <div class="staff-name">Reem AL-Anazi</div>
    </div>
      <input type="checkbox" name="staff[]" value="4" class="staff-check">
     </label>
-
 
   </div>
  </div>
@@ -117,46 +100,49 @@
 
 
   <!-- Section 2: Add a new member -->
-  <section class="ManageStaff-container">
- <h2>Add Staff Member</h2>
+  <section class="ManageStaff-seq"
+   style=
+  "background: #FFF8F5;
+  border: 2px solid #B0857B;
+  border-radius: 15px;  
+  width: 85%;
+  margin: 50px auto;
+  padding: 30px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);">
 
- <form class="AddMember-form" method="post" enctype="multipart/form-data">
-  <div class="form-grid">
+    <div class="form-box" style="padding: 60px; width: 900px;">
+    <h2>Add Staff Member</h2>
+
+ <form action="manageTeam.html" method="post" enctype="multipart/form-data">
+ 
    <div class="photo-uploader">
     <div class="photo-box" aria-label="Member photo placeholder">📷</div>
     <input type="file" name="photo" accept="image/*" style="display:none" id="upload-photo">
-   
    </div>
-   <div class="form-fields">
+  
 
-    <label for="full-name">Full Name</label>
-    <input id="full-name" type="text" name="name">
+    <label for="full-name">Full Name:</label>
+    <input id="full-name" type="text" name="name"><br>
 
-    <label for="dob">Date of Birth</label>
+    <label for="dob">Date of Birth:</label>
     <input id="dob" type="date" name="dob">
 
-    <label for="email">Email</label>
+    <label for="email">Email:</label>
     <input id="email" type="email" name="email">
 
-    <label for="education">Education</label>
+    <label for="education">Education:</label>
     <input id="education" type="text" name="education">
 
-   <label for="expertise">Area of expertise</label>
-   <textarea id="expertise" name="expertise" rows="4" cols="64">Write here...</textarea>
+   <label for="expertise">Area of expertise:</label>
+   <textarea id="expertise" name="expertise" rows="3" >Write here...</textarea>
 
-    <label for="skills">Skills</label>
-    <textarea id="skills" name="skills" rows="4" cols="64">Write here...</textarea>
+    <label for="skills">Skills:</label>
+    <textarea id="skills" name="skills" rows="3">Write here...</textarea>
+     <input type="button" value="Delete">
+   <input  type="submit"  value=Add>
 
    </div>
 
-
-
-  </div>
-
-  <div class="form-buttons">
-   <input type="button" value="cancel">
-   <input  type="submit"  value=Add>
-  </div>
  </form>
 </section>
 
