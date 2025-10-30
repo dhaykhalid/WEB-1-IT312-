@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
 <meta charset="UTF-8" />
@@ -23,140 +23,126 @@
       </ul>
     </nav>
   </header>
+   <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-bottom:16px">
+  <ol style="list-style:none; display:flex; gap:8px;">
+      <li><a href="index1.html">Home</a></li>
+        <li aria-hidden="true">›</li>
+         <li><a href="Provider.html">Provider</a></li>
+        <li aria-hidden="true">›</li>
+      <li aria-current="page">Manage Team</li>
+</ol>
+  </nav>
+
   
 <main>
-<!-- ===== Breadcrumb ===== -->
-<nav class="breadcrumb" aria-label="Breadcrumb">
-  <ol>
-    <li><a href="index1.html">Home</a></li>
-    <li aria-hidden="true">›</li>
-    <li><a href="about.html">Provider</a></li>
-    <li aria-hidden="true">›</li>
-    <li aria-current="page">Manage Team</li>
-  </ol>
-</nav>
+
   <main class="page-wrap">
   <!-- Section 1: Manage existing staff-->
-<section class="ManageStaff-container">
+<section class="ManageStaff-container staff-list-section">
  <div class="section-head">
   <h2>Manage Staff Members</h2>
   <div class="list-actions">
-  <input type="submit"  value="Delete">
+  <input type="submit" class="button danger-btn" value="Delete">
   </div>
  </div>
-<form method="post" action="#" class="staff-form">
+
+ <form method="post" class="staff-form">
   <div class="staff-box">
-    <div class="staff-list" aria-label="Staff members">
+   <div class="staff-list" aria-label="Staff members">
 
-      <label class="staff-card">
-        <div class="staff-left">
-          <div class="photo-thumb">
-            <img src="images/staff1.PNG" class="photo-img" alt="">
-          </div>
-          <div class="staff-name">Sarah Ahmed</div>
-        </div>
-        <input type="checkbox" name="staff1" value="1" class="staff-check">
-      </label>
-
-      <label class="staff-card">
-        <div class="staff-left">
-          <div class="photo-thumb">
-            <img src="images/images/staff2.PNG" class="photo-img" alt="">
-          </div>
-          <div class="staff-name">Lina Al-Harbi</div>
-        </div>
-        <input type="checkbox" name="staff2" value="2" class="staff-check">
-      </label>
-
-      <label class="staff-card">
-        <div class="staff-left">
-          <div class="photo-thumb">
-            <img src="images/staff5.PNG" class="photo-img" alt="">
-          </div>
-          <div class="staff-name">Aisha Saleh</div>
-        </div>
-        <input type="checkbox" name="staff3" value="3" class="staff-check">
-      </label>
-
-      <label class="staff-card">
-        <div class="staff-left">
-          <div class="photo-thumb">
-            <img src="images/images/staff6.PNG" class="photo-img" alt="">
-          </div>
-          <div class="staff-name">Noor Khalid</div>
-        </div>
-        <input type="checkbox" name="staff4" value="4" class="staff-check">
-      </label>
-
-      <label class="staff-card">
-        <div class="staff-left">
-          <div class="photo-thumb">
-            <img src="images/staff3.PNG" class="photo-img" alt="">
-          </div>
-          <div class="staff-name">Maya Hassan</div>
-        </div>
-        <input type="checkbox" name="staff5" value="5" class="staff-check">
-      </label>
-
-      <label class="staff-card">
-        <div class="staff-left">
-          <div class="photo-thumb">
-            <img src="images/staff4.PNG" class="photo-img" alt="">
-          </div>
-          <div class="staff-name">Reem Al-Anazi</div>
-        </div>
-        <input type="checkbox" name="staff6" value="6" class="staff-check">
-      </label>
-
+    <label class="staff-card">
+    <div class="staff-left">
+    <div class="photo-thumb">
+      <img src="images/staff1.PNG" class="photo-img" alt="">
+     </div>
+     <div class="staff-name">Sarah Ahmed</div>
     </div>
+     <input type="checkbox" name="staff[]" value="1" class="staff-check">
+    </label>
+
+    <label class="staff-card">
+     <div class="staff-left">
+    <div class="photo-thumb">
+     <img src="images/staff2.PNG" class="photo-img" alt="">
+      </div>
+    <div class="staff-name">Lina Al-Harbi</div>
+     </div>
+     <input type="checkbox" name="staff[]" value="2" class="staff-check">
+   </label>
+
+    <label class="staff-card">
+    <div class="staff-left">
+      <div class="photo-thumb">
+      <img src="images/staff3.PNG" class="photo-img" alt="">
+      </div>
+     <div class="staff-name">Maya Hassan</div>
+     </div>
+    <input type="checkbox"  name="staff[]" value="3" class="staff-check">
+    </label>
+
+    <label class="staff-card">
+     <div class="staff-left">
+     <div class="photo-thumb">
+      <img src="images/staff4.PNG" class="photo-img" alt="">
+     </div>
+     <div class="staff-name">Reem AL-Anazi</div>
+   </div>
+     <input type="checkbox" name="staff[]" value="4" class="staff-check">
+    </label>
+
   </div>
-</form>
+ </div>
+ </form>
 </section>
 
 
 
 
   <!-- Section 2: Add a new member -->
-  <section class="ManageStaff-container">
- <h2>Add Staff Member</h2>
+  <section class="ManageStaff-seq"
+   style=
+  "background: #FFF8F5;
+  border: 2px solid #B0857B;
+  border-radius: 15px;  
+  width: 85%;
+  margin: 50px auto;
+  padding: 30px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);">
 
- <form class="AddMember-form" method="post" enctype="multipart/form-data">
-  <div class="form-grid">
+    <div class="form-box" style="padding: 60px; width: 900px;">
+    <h2>Add Staff Member</h2>
+
+ <form action="manageTeam.html" method="post" enctype="multipart/form-data">
+ 
    <div class="photo-uploader">
     <div class="photo-box" aria-label="Member photo placeholder">📷</div>
     <input type="file" name="photo" accept="image/*" style="display:none" id="upload-photo">
-   
    </div>
-   <div class="form-fields">
+  
 
-    <label for="full-name">Full Name</label>
-    <input id="full-name" type="text" name="name">
+    <label for="full-name">Full Name:</label>
+    <input id="full-name" type="text" name="name"><br>
 
-    <label for="dob">Date of Birth</label>
+    <label for="dob">Date of Birth:</label>
     <input id="dob" type="date" name="dob">
 
-    <label for="email">Email</label>
+    <label for="email">Email:</label>
     <input id="email" type="email" name="email">
 
-    <label for="education">Education</label>
+    <label for="education">Education:</label>
     <input id="education" type="text" name="education">
 
-   <label for="expertise">Area of expertise</label>
-   <textarea id="expertise" name="expertise" rows="4" cols="64">Write here...</textarea>
+   <label for="expertise">Area of expertise:</label>
+   <textarea id="expertise" name="expertise" rows="3" >Write here...</textarea>
 
-    <label for="skills">Skills</label>
-    <textarea id="skills" name="skills" rows="4" cols="64">Write here...</textarea>
+    <label for="skills">Skills:</label>
+    <textarea id="skills" name="skills" rows="3">Write here...</textarea>
+     <input type="button" value="cancel">
+   <input  type="submit"  value=Add>
 
    </div>
 
-
-
-  </div>
-
-  <div id="wasan" class="form-buttons">
-   <input type="button" value="cancel">
-   <input  type="submit"  value=Add>
-  </div>
  </form>
 </section>
 
