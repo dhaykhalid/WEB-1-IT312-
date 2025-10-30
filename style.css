@@ -352,7 +352,7 @@ footer {
 }
 
 .Previous-card .Status
-.service-card-Provider {
+ {
   position: absolute;
   top: 12px;
   right: 12px;
@@ -610,6 +610,7 @@ textarea  {
   object-position:center;  
   display:block;
 }
+
 
 
 
