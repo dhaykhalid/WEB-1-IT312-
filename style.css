@@ -717,11 +717,7 @@ textarea  {
 .profile-table td ul ul ul{list-style-type:square;margin-top:2px;padding-left:16px;}
 .profile-table td ul li{margin:3px 0;}
 
-/* Responsive */
-@media (max-width:640px){
-  .profile-hero{flex-direction:column;align-items:center;text-align:center;padding:20px;}
-  .profile-hero .hero-text{max-width:100%;}
-}
+
 /* Meet Our Staff — Horizontal cards */
 .staff-section{
   background:#fffaf5;
@@ -757,6 +753,7 @@ textarea  {
 .member .name a{text-decoration:none;color:#4d4021;}
 .member .name a:hover{color:#b0857b;}
 .member .role{font-size:.9rem;color:#6b5b52;}
+
 
 
 
