@@ -135,10 +135,11 @@
 
  <form action="manageTeam.html" method="post" enctype="multipart/form-data">
  
-   <div class="photo-uploader">
-    <div class="photo-box" aria-label="Member photo placeholder">📷</div>
-    <input type="file" name="photo" accept="image/*" style="display:none" id="upload-photo">
-   </div>
+   <div class="photo-upload">
+  <label for="upload-photo" class="photo-box">📷</label>
+  <input type="file" id="upload-photo" name="photo" accept="image/*"
+         style="position:absolute; left:-9999px; width:1px; height:1px; opacity:0;">
+</div>
   
 
     <label for="full-name">Full Name:</label>
