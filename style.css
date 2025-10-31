@@ -517,11 +517,6 @@ textarea  {
                                                
 }
 
-
-
-
-
-
 /* ===== upload ===== */
 
 .photo-box {
@@ -558,16 +553,58 @@ textarea  {
   opacity: 1;
 }
 
+/* Services Section */
+.services {
+  background: #fffaf8; /* light creamy background */
+  padding: 50px;
+  text-align: center;
+}
 
+.service-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
 
+.service-card {
+  width: 30%;
+  padding: 15px;
+  background: white;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
 
+.service-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.service-card h3 {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Hide the info text by default */
+.service-card .info {
+  display: none;
+  color: #5c4033;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Show it on hover */
+.service-card:hover .info {
+  display: block;
+}
+
+/* Make card pop a little on hover */
+.service-card:hover {
+  transform: scale(1.05);
 
 
 /* ===== Section 1: list with checkboxes ===== */
 .section-head{ display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:10px; }
 .list-actions{ display:flex; gap:10px; }
-
-
 
 
 .staff-list{
@@ -720,6 +757,7 @@ textarea  {
 .member .name a{text-decoration:none;color:#4d4021;}
 .member .name a:hover{color:#b0857b;}
 .member .role{font-size:.9rem;color:#6b5b52;}
+
 
 
 
