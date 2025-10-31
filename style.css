@@ -519,12 +519,6 @@ textarea  {
 
 /* ===== upload ===== */
 
-.photo-box {
-  position: relative;
-  cursor: pointer; /* يجعل الماوس يشير أنه قابل للنقر */
-  transition: all 0.3s ease;
-}
-
 .photo-box:hover {
   background-color: #f5e6df; /* لون أفتح يعطي إحساس بالتحرك */
   box-shadow: 0 0 10px rgba(92, 64, 51, 0.3);
@@ -753,6 +747,7 @@ textarea  {
 .member .name a{text-decoration:none;color:#4d4021;}
 .member .name a:hover{color:#b0857b;}
 .member .role{font-size:.9rem;color:#6b5b52;}
+
 
 
 
