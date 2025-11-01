@@ -64,7 +64,7 @@ h2 { font-size: 1.8rem; margin-bottom: 18px; }
 
 /* Services Section */
 .services {
-  background: #fffaf8; /* light creamy background */
+  background: #fffaf8; 
   padding: 50px;
   text-align: center;
 }
@@ -770,5 +770,3 @@ textarea  {
 .profile-table td ul li {
   margin: 3px 0;
 }
-
-
