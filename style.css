@@ -121,50 +121,24 @@ h2 { font-size: 1.8rem; margin-bottom: 18px; }
   transform: scale(1.05);
 }
 
-
-
-
-
-
-/* ========== Reviews ========== */
-/*.review-grid { 
-  display: grid; 
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 24px;  
-
-}
-.reviews {
-  background-color: #FFFFFF; 
-  padding: 60px 40px;
-}
-
-.review {
-  background-color: #FFF8F5; 
-  border-radius: 12px;
-  padding: 18px;
-}
-
-.review p { color: #5C4033; }*/
 /* ========== Reviews ========== */
 .reviews {
   background-color: #FFFFFF;
   padding: 60px 40px;
 }
 
-/* كان display:grid; صار Flexbox */
 .review-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;              /* بديل grid-gap */
+  gap: 24px;              
 }
 
-/* 3 بطاقات بالصف على الشاشات الكبيرة */
 .review {
   background-color: #FFF8F5;
   border-radius: 12px;
   padding: 18px;
-  flex: 0 0 32%;          /* تقريبًا ثلث الصف */
-  box-sizing: border-box; /* مهم مع الـpadding */
+  flex: 0 0 32%;          
+  box-sizing: border-box; 
 }
 
 .review p { color: #5C4033; }
@@ -198,22 +172,8 @@ footer {
 }
 
 /* === Services page only === */
-/*.services-page {
-  background: #FFFFFF; 
-}
-
-
-.services-page .service-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-/* === Services page only === */
 .services-page { background: #FFFFFF; }
 
-/* كان display:grid; الآن Flexbox */
 .services-page .service-grid {
   display: flex;
   flex-wrap: wrap;
@@ -222,17 +182,13 @@ footer {
   margin: 0 auto;
 }
 
-/* خليه ياخذ ثلث الصف مثل قبل */
 .services-page .service-card {
-  width: 100%;          /* احتياط */
-  flex: 0 0 31%;        /* ~ 3 أعمدة مع فراغات */
+  width: 100%;         
+  flex: 0 0 31%;       
   box-sizing: border-box;
 }
 
-/*.services-page .service-card { width: 100%; }*/
-
-
-/* optional: consistent image height */
+/* to garenteed consistent image height */
 .services-page .service-card img {
   width: 100%;
   height: 220px;
@@ -814,4 +770,5 @@ textarea  {
 .profile-table td ul li {
   margin: 3px 0;
 }
+
 
